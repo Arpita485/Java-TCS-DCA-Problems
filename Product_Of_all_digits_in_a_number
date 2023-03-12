@@ -1,0 +1,14 @@
+import java.util.*;
+class ProductOfAllDigit{
+  public static void main(String args[]){
+      Scanner scan=new Scanner(System.in);
+      int n=scan.nextInt();
+      int multiple=1;
+      
+      while(n!=0){
+        multiple=multiple*(n%10);
+        n=n/10;
+        }
+        System.out.println(multiple);
+  }
+}
